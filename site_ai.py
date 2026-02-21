@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 import os
 
-genai.configure(api_key="AIzaSyBv3TMYQu1jICVVfn11zsbUKdVLqeGGLUM")
+genai.configure(api_key="AIzaSyD73YtOUSL_Zp_5fm1aI83rzy-8jo0KnKo")
 
 st.title("GEMMA AI")
 
@@ -17,4 +17,5 @@ if intrebare:
     except Exception as e:
 
         st.error(f"A aparut o problema: {e}")
+
 
