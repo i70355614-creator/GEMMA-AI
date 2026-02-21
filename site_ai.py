@@ -10,12 +10,13 @@ intrebare = st.chat_input("Scrie ceva aici....")
 
 if intrebare:
 
-    model=genai.GenerativeModel("models/gemini-pro-latest")
+    model=genai.GenerativeModel("gemini-pro")
     try:
         response = model.generate_content(intrebare)
         st.write(response.text)
     except Exception as e:
 
         st.error(f"A aparut o problema: {e}")
+
 
 
